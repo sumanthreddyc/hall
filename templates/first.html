@@ -1,0 +1,14 @@
+<div>
+	<h1>LLR hall of residence.</h1>
+	<div style="text-align: right;">
+		<a href="/login">Login</a>
+		<a href="/register">Register</a>
+	</div>
+
+	<div>
+		{% for post in posts %}
+        	{{ post.user_id }}<br>
+        	{{ post.post}}<br><br>
+		{% endfor %}
+	</div>
+</div>
